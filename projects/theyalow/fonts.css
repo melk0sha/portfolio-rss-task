@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Asap Regular';
+  src: url('assets/fonts/Asap-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lucida Sans It';
+  src: url('assets/fonts/LucidaSans-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('assets/fonts/OpenSans.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('assets/fonts/PTSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('assets/fonts/SegoeUI.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe UI Bold';
+  src: url('assets/fonts/SegoeUI-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe UI Light';
+  src: url('assets/fonts/SegoeUI-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe WP';
+  src: url('assets/fonts/SegoeWP.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Segoe WP Light';
+  src: url('assets/fonts/SegoeWP-Light.ttf') format('truetype');
+}
+
+
+
+
+/* 
+@font-face {
+  font-family: 'Lucida Sans';
+  src: url('assets/fonts/LucidaSans.eot');
+  src: url('assets/fonts/LucidaSans.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/LucidaSans.woff2') format('woff2'),
+  url('assets/fonts/LucidaSans.woff') format('woff'),
+  url('assets/fonts/LucidaSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans Caption bold';
+  src: url('assets/fonts/ptsans/PTSans-CaptionBold.eot');
+  src: url('assets/fonts/ptsans/PTSans-CaptionBold.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/ptsans/PTSans-CaptionBold.woff2') format('woff2'),
+  url('assets/fonts/ptsans/PTSans-CaptionBold.woff') format('woff'),
+  url('assets/fonts/ptsans/PTSans-CaptionBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans Caption';
+  src: url('assets/fonts/ptsans/PTSans-Caption.eot');
+  src: url('assets/fonts/ptsans/PTSans-Caption.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/ptsans/PTSans-Caption.woff2') format('woff2'),
+  url('assets/fonts/ptsans/PTSans-Caption.woff') format('woff'),
+  url('assets/fonts/ptsans/PTSans-Caption.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans Narrow';
+  src: url('assets/fonts/ptsans/PTSans-NarrowBold.eot');
+  src: url('assets/fonts/ptsans/PTSans-NarrowBold.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/ptsans/PTSans-NarrowBold.woff2') format('woff2'),
+  url('assets/fonts/ptsans/PTSans-NarrowBold.woff') format('woff'),
+  url('assets/fonts/ptsans/PTSans-NarrowBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans It';
+  src: url('assets/fonts/ptsans/PTSans-BoldItalic.eot');
+  src: url('assets/fonts/ptsans/PTSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/ptsans/PTSans-BoldItalic.woff2') format('woff2'),
+  url('assets/fonts/ptsans/PTSans-BoldItalic.woff') format('woff'),
+  url('assets/fonts/ptsans/PTSans-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Sans bold';
+  src: url('assets/fonts/ptsans/PTSans-Bold.eot');
+  src: url('assets/fonts/ptsans/PTSans-Bold.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/ptsans/PTSans-Bold.woff2') format('woff2'),
+  url('assets/fonts/ptsans/PTSans-Bold.woff') format('woff'),
+  url('assets/fonts/ptsans/PTSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans Narrow';
+  src: url('assets/fonts/ptsans/PTSans-Narrow.eot');
+  src: url('assets/fonts/ptsans/PTSans-Narrow.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/ptsans/PTSans-Narrow.woff2') format('woff2'),
+  url('assets/fonts/ptsans/PTSans-Narrow.woff') format('woff'),
+  url('assets/fonts/ptsans/PTSans-Narrow.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('assets/fonts/ptsans/PTSans-Italic.eot');
+  src: url('assets/fonts/ptsans/PTSans-Italic.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/ptsans/PTSans-Italic.woff2') format('woff2'),
+  url('assets/fonts/ptsans/PTSans-Italic.woff') format('woff'),
+  url('assets/fonts/ptsans/PTSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Segoe UI It-bold';
+  src: url('assets/fonts/SegoeUI-BoldItalic.eot');
+  src: url('assets/fonts/SegoeUI-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/SegoeUI-BoldItalic.woff2') format('woff2'),
+  url('assets/fonts/SegoeUI-BoldItalic.woff') format('woff'),
+  url('assets/fonts/SegoeUI-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'Segoe UI It';
+  src: url('assets/fonts/SegoeUI-Italic.eot');
+  src: url('assets/fonts/SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/SegoeUI-Italic.woff2') format('woff2'),
+  url('assets/fonts/SegoeUI-Italic.woff') format('woff'),
+  url('assets/fonts/SegoeUI-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+} */

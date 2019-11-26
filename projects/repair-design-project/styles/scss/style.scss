@@ -1,0 +1,1979 @@
+@import 'reset';
+@import 'fonts';
+@import 'variables';
+@import 'header';
+
+.wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section.welcome {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 707px;
+    .welcome-main {
+        display: flex;
+        background-color: $bgColorOne;
+        a.instagram {
+            display: flex;
+            position: relative;
+            font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
+            align-self: center;
+            transform: rotate(90deg);
+            color: $buttonTextColor;
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 16px;
+        }
+        a.instagram::after {
+            content: '';
+            position: absolute;
+            top: 45%;
+            right: -80%;
+            height: 1px;
+            width: 51px;
+            background-color: $buttonTextColor;
+        }
+    }
+    .welcome-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url(../assets/images/bg-welcome.png);
+        height: 707px;
+        width: 1358px;
+        h2 {
+            font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            width: 600px;
+            font-size: 40px;
+            line-height: 53px;
+            text-transform: uppercase;
+            color: $bgColorTwo;
+            margin-left: 60px;
+        }
+        h2 span {
+            color: $buttonTextColor;
+        }
+        p {
+            font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+            width: 500px;
+            color: $bgColorTwo;
+            font-size: 22px;
+            line-height: 30px;
+            margin-left: 60px;
+        }
+        .buttons {
+            margin: 41px 0 0 60px;
+            .calculate-button {
+                font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
+                width: 207px;
+                height: 51px;
+                color: $bgColorTwo;
+                border: none;
+                font-size: 13px;
+                outline: none;
+                line-height: 15px;
+                box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+                border-radius: 2px;
+                text-transform: uppercase;
+                background-color: $buttonTextColor;
+                &:hover {
+                    background-color: rgb(179, 144, 88);
+                    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+                    cursor: pointer;
+                }
+            }
+            .submit-app-button {
+                font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
+                width: 207px;
+                height: 51px;
+                color: $bgColorTwo;
+                background: transparent;
+                border: 1px solid $bgColorTwo;
+                border-radius: 2px;
+                outline: none;
+                font-size: 13px;
+                line-height: 15px;
+                text-transform: uppercase;
+                margin-left: 15px;
+                &:hover {
+                    background-color: rgba(179, 144, 88, 0.637);
+                    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+                    cursor: pointer;
+                }
+            }
+            .mobile-submit-app-button {
+                display: none;
+            }
+        }
+    }
+    .scroll-down {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: -49px;
+        width: 247px;
+        height: 97px;
+        background-color: $bgColorOne;
+        h4 {
+            display: inline;
+            font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            color: $bgColorTwo;
+            margin-right: 10px;
+            font-size: 14px;
+            line-height: 19px;
+            text-transform: uppercase;
+        }
+        img:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}
+
+section.completed-projects {
+    display: flex;
+    flex-direction: column;
+    height: 1074px;
+    overflow: hidden;
+    background-color: $bgColorOne;
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        margin-top: 85px;
+    }
+    ul li a:hover {
+        color: $buttonTextColor;
+        opacity: 1;
+        border-bottom: 1px solid $buttonTextColor;
+        cursor: pointer;
+    }
+    ul li a {
+        margin-right: 50px;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: $bgColorTwo;
+        opacity: 0.3;
+    }
+    ul li:last-of-type a {
+        margin-right: 233px;
+    }
+    .completed-main {
+        display: flex;
+        margin-left: 80px;
+        .completed-info {
+            display: flex;
+            flex-direction: column;
+            h2 {
+                display: flex;
+                position: relative;
+                font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                width: 100px;
+                margin-top: 40px;
+                font-size: 27px;
+                line-height: 37px;
+                letter-spacing: -0.07em;
+                text-transform: uppercase;
+                color: $buttonTextColor;
+            }
+            h2::after {
+                content: '';
+                position: absolute;
+                top: 75%;
+                left: 170%;
+                height: 1px;
+                width: 92px;
+                background-color: $buttonTextColor;
+            }
+            p {
+                font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                margin-top: 34px;
+                font-size: 18px;
+                line-height: 29px;
+                color: $bgColorTwo;
+                width: 450px;
+            }
+            table {
+                margin-top: 60px;
+                width: 442px;
+                color: $bgColorTwo;
+                font-size: 15px;
+                line-height: 20px;
+                th {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    color: $buttonTextColor;
+                    text-transform: uppercase;
+                    text-align: left;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                td {
+                    font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                    padding-bottom: 40px;
+                    vertical-align: top;
+                }
+            }
+            .arrows-circles {
+                margin-top: 81px;
+                display: flex;
+            }
+            .arrows-circles .circle {
+                margin-left: 17px;
+                margin-top: 2px;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background-color: $bgColorTwo;
+                opacity: 0.3;
+            }
+            .arrows-circles .circle:first-of-type {
+                margin-left: 30px;
+            }
+            .arrows-circles .circle:last-of-type {
+                margin-right: 30px;
+            }
+            .arrows-circles .circle:hover {
+                opacity: 1;
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+            .left-arrow:hover {
+                margin-left: -5px;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+            .right-arrow:hover {
+                margin-left: 5px;
+                margin-right: -5px;
+                cursor: pointer;
+            }
+        }
+        .slider {
+            display: flex;
+            position: relative;
+            margin-top: 45px;
+            margin-left: 60px;
+            img {
+                margin-right: 21px;
+                box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.15);
+            }
+            .slider-arrow-left {
+                display: none;
+            }
+            .slider-arrow-right {
+                position: absolute;
+                width: 54px;
+                height: 54px;
+                left: 55%;
+                top: 45%;
+                border-radius: 50%;
+                background-color: $buttonTextColor;
+                box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+                img {
+                    padding: 20px 0 0 22px;
+                }
+                &:hover {
+                    background-color: rgb(179, 144, 88);
+                    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .online-control {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 91px;
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: $bgColorTwo;
+        img {
+            margin-top: 12px;
+        }
+        h4 {
+            position: relative;
+            font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+        }
+        h4::after {
+            content: '';
+            position: absolute;
+            top: 190%;
+            left: 65%;
+            height: 1px;
+            width: 32px;
+            background-color: $buttonTextColor;
+        }
+        h4::before {
+            content: '';
+            position: absolute;
+            top: 190%;
+            left: 18%;
+            height: 1px;
+            width: 32px;
+            background-color: $buttonTextColor;
+        }
+    }
+}
+
+.repair-video {
+    margin-top: -160px;
+    display: flex;
+    justify-content: center;
+    iframe {
+        box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+    }
+}
+
+section.request-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+        position: relative;
+        font-size: 20px;
+        line-height: 34px;
+        width: 700px;
+        text-align: center;
+    }
+    p::before {
+        content: '';
+        position: absolute;
+        top: -20%;
+        left: 47%;
+        height: 1px;
+        width: 55px;
+        background-color: $buttonTextColor;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 91px;
+        .submit-line {
+            display: flex;
+            label {
+                display: block;
+                font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                opacity: 0.5;
+                font-size: 15px;
+                line-height: 20px;
+            }
+            input {
+                border: none;
+                font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                outline: none;
+                border-bottom: 1px solid #3636367c;
+                color: $bgColorOne;
+                font-size: 18px;
+                line-height: 24px;
+                margin-right: 50px;
+                padding-bottom: 3px;
+            }
+            input::-webkit-input-placeholder {
+                color: rgb(0, 0, 0);
+            } 
+            input::-moz-placeholder {
+                color: rgb(0, 0, 0);
+            }
+            button.submit-your-info {
+                width: 200px;
+                font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                line-height: 26px;
+                text-transform: uppercase;
+                background-color: $buttonTextColor;
+                border: none;
+                outline: none;
+                color: $bgColorTwo;
+                box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+                border-radius: 2px;
+                &:hover {
+                    background-color: rgb(179, 144, 88);
+                    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+                    cursor: pointer;
+                }
+            }
+        }
+        .checkbox-line {
+            display: flex;
+            align-items: center;
+            font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+            margin-top: 33px;
+            /*** Checkbox start ***/
+            input[type="checkbox"]:checked, 
+            input[type="checkbox"]:not(:checked) {
+                position: absolute;
+                left: -9999px;
+            }
+            input[type="checkbox"]:checked + label, 
+            input[type="checkbox"]:not(:checked) + label {
+                display: inline-block;
+                position: relative;
+                padding-left: 28px;
+                line-height: 20px;
+                cursor: pointer;
+            }
+            input[type="checkbox"]:checked + label:before, 
+            input[type="checkbox"]:not(:checked) + label:before {
+                content: "";
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 18px;
+                height: 18px;
+                border: 1px solid #dddddd;
+                background-color: $buttonTextColor;
+            }
+            input[type="checkbox"]:checked + label:before, 
+            input[type="checkbox"]:not(:checked) + label:before {
+                border-radius: 2px;
+            }
+            input[type="checkbox"]:checked + label:after, 
+            input[type="checkbox"]:not(:checked) + label:after {
+                content: "";
+                position: absolute;
+                -webkit-transition: all 0.2s ease;
+                -moz-transition: all 0.2s ease;
+                -o-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+            }
+            input[type="checkbox"]:checked + label:after, 
+            input[type="checkbox"]:not(:checked) + label:after {
+                left: 5px;
+                top: 5px;
+                width: 8px;
+                height: 4px;
+                border-radius: 1px;
+                border-left: 3px solid $bgColorTwo;
+                border-bottom: 3px solid $bgColorTwo;
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+            input[type="checkbox"]:not(:checked) + label:after {
+                opacity: 0;
+            }
+            input[type="checkbox"]:checked + label:after {
+                opacity: 1;
+            }
+            label {          
+                font-size: 16px;
+                line-height: 22px;
+            }
+            /*** Checkbox end ***/
+        }
+    }
+}
+
+section.types-of-repair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 147px;
+    h2 {
+        font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+        position: relative;
+    }
+    img {
+        margin-top: 13px;
+    }
+    h2::before {
+        content: '';
+        position: absolute;
+        top: 190%;
+        left: 15%;
+        height: 1px;
+        width: 32px;
+        background-color: $buttonTextColor;
+    }
+    h2::after {
+        content: '';
+        position: absolute;
+        top: 190%;
+        right: 15%;
+        height: 1px;
+        width: 32px;
+        background-color: $buttonTextColor;
+    }
+    .types-offers {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 31px;
+        .first-offer {
+            display: flex;
+            justify-content: center;
+            height: 421px;
+            width: 392px;
+            margin-right: 30px;
+            background-image: url(../assets/images/redecorating.png);
+            .first {
+                margin-top: 350px;
+                height: 286px;
+                width: 330px;
+                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+                background-color: $bgColorTwo;
+                h4 {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    padding: 25px 0 0 32px;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                ul {
+                    padding: 13px 0 0 50px;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #959595;
+                    li {
+                        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                        list-style: disc;
+                    }
+                }
+                .cost {                         // can use mixin there
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    color: $bgColorTwo;
+                    margin-top: 21px;
+                    height: 54px;
+                    width: 228px;
+                    background-color: $buttonTextColor;
+                    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .second-offer {
+            display: flex;
+            justify-content: center;
+            height: 421px;
+            width: 392px;
+            margin-right: 30px;
+            background-image: url(../assets/images/overhaul.png);
+            .second {
+                margin-top: 350px;
+                height: 286px;
+                width: 330px;
+                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+                background-color: $bgColorTwo;
+                h4 {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    padding: 25px 0 0 32px;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                ul {
+                    padding: 13px 0 0 50px;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #959595;
+                    li {
+                        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                        list-style: disc;
+                    }
+                }
+                .cost {                         // can use mixin there
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    color: $bgColorTwo;
+                    margin-top: 21px;
+                    height: 54px;
+                    width: 228px;
+                    background-color: $buttonTextColor;
+                    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .third-offer {
+            display: flex;
+            justify-content: center;
+            height: 421px;
+            width: 392px;
+            background-image: url(../assets/images/designer-repair.png);
+            .third {
+                margin-top: 350px;
+                height: 286px;
+                width: 330px;
+                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+                background-color: $bgColorTwo;
+                h4 {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    padding: 25px 0 0 32px;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                ul {
+                    padding: 13px 0 0 50px;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #959595;
+                    li {
+                        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                        list-style: disc;
+                    }
+                }
+                .cost {                         // can use mixin there
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    color: $bgColorTwo;
+                    margin-top: 21px;
+                    height: 54px;
+                    width: 228px;
+                    background-color: $buttonTextColor;
+                    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+section.virtues-call {
+    display: flex;
+    margin-top: 360px;
+    .circles {
+        font-family: 'FuturaMediumC', Arial, Helvetica, sans-serif;
+        position: relative;
+        width: 833px;
+        .ellipse {  
+            width: 636px;
+            height: 636px;
+            border-radius: 50%;
+            margin-left: -120px;
+            background: 
+               linear-gradient(#fff,#fff) padding-box,
+               linear-gradient(to right, #fff 0%, #fff 20%, #fff 20%, #E3B873 100%) border-box;
+            border: 3px solid transparent;
+            z-index: 2;
+        }
+        img {
+            position: absolute;
+            height: 636px;
+            top: -5%;
+        }
+        .circle:nth-of-type(2) {
+            box-sizing: content-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 10%;
+            left: 47%;
+            height: 41px;
+            width: 41px;
+            font-size: 18px;
+            line-height: 25px;
+            color: $bgColorTwo;
+            border: 10px solid $bgColorTwo;
+            border-radius: 50%;
+            background-color: $buttonTextColor;
+        }
+        .circle:nth-of-type(2)::after {
+            content: "Our specialist will arrive for measurements per day contact, or appoint a date convenient for you";
+            position: absolute;
+            left: 140%;
+            color: $bgColorOne;
+            font-size: 18px;
+            line-height: 21px;
+            width: 365px;
+        }
+        .circle:nth-of-type(3) {
+            box-sizing: content-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 27%;
+            left: 56%;
+            height: 41px;
+            width: 41px;
+            font-size: 18px;
+            line-height: 25px;
+            color: $bgColorTwo;
+            border: 10px solid $bgColorTwo;
+            border-radius: 50%;
+            background-color: $buttonTextColor;
+        }
+        .circle:nth-of-type(3)::after {
+            content: "Free metering";
+            position: absolute;
+            left: 140%;
+            color: $bgColorOne;
+            font-size: 18px;
+            line-height: 21px;
+            width: 365px;
+        }
+        .circle:nth-of-type(4) {
+            box-sizing: content-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 58%;
+            height: 41px;
+            width: 41px;
+            font-size: 18px;
+            line-height: 25px;
+            color: $bgColorTwo;
+            border: 10px solid $bgColorTwo;
+            border-radius: 50%;
+            background-color: $buttonTextColor;
+            z-index: 1;
+        }
+        .circle:nth-of-type(4)::after {
+            content: "Free consultation";
+            position: absolute;
+            left: 140%;
+            color: $bgColorOne;
+            font-size: 18px;
+            line-height: 21px;
+            width: 365px;
+        }
+        .circle:nth-of-type(5) {
+            box-sizing: content-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 73%;
+            left: 52%;
+            height: 41px;
+            width: 41px;
+            font-size: 18px;
+            line-height: 25px;
+            color: $bgColorTwo;
+            border: 10px solid $bgColorTwo;
+            border-radius: 50%;
+            background-color: $buttonTextColor;
+            z-index: 1;
+        }
+        .circle:nth-of-type(5)::after {
+            content: "Get a cost estimate and the timing of your future repairs";
+            position: absolute;
+            left: 140%;
+            color: $bgColorOne;
+            font-size: 18px;
+            line-height: 21px;
+            width: 220px;
+        }
+    }
+    .form-save {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        .call-form { 
+            font-family: 'FuturaMediumC', Arial, Helvetica, sans-serif;
+            color: $bgColorTwo;
+            height: 509px;
+            width: 506px;
+            background-color: $bgColorOne;
+            box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+            h3 {
+                font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                line-height: 25px;
+                text-align: center;
+                padding-top: 28px;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                padding: 39px 49px 27px 49px;
+            }
+            button.call-the-measurer {
+                align-self: flex-end;
+                font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
+                margin-top: 54px;
+                width: 213px;
+                height: 51px;
+                color: $bgColorTwo;
+                font-size: 13px;
+                line-height: 18px;
+                outline: none;
+                border: none;
+                text-transform: uppercase;
+                background-color: $buttonTextColor;
+                box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+                &:hover {
+                    background-color: rgb(179, 144, 88);
+                    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+                    cursor: pointer;
+                }
+            }
+            input[type="text"] {
+                font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                height: 50px;
+                width: 408px;
+                font-size: 18px;
+                line-height: 25px;
+                margin-top: -20px;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #ffffff15;
+                background: none;
+                padding-top: 20px;
+            }
+            input::-webkit-input-placeholder {
+                color: $bgColorTwo;
+            } 
+            input::-moz-placeholder {
+                color: $bgColorTwo;
+            }
+            label:not(:first-of-type) {
+                margin-top: 48px;
+            }
+            label:not(:last-of-type) {
+                font-size: 15px;
+                line-height: 20px;
+                opacity: 0.5;
+            }
+            label:last-of-type {
+                margin-top: 2px;
+            }
+            
+            /*** Checkbox start ***/
+            input[type="checkbox"]:checked, 
+            input[type="checkbox"]:not(:checked) {
+                position: absolute;
+                left: -9999px;
+            }
+            input[type="checkbox"]:checked + label, 
+            input[type="checkbox"]:not(:checked) + label {
+                display: inline-block;
+                position: relative;
+                padding-left: 28px;
+                line-height: 20px;
+                cursor: pointer;
+            }
+            input[type="checkbox"]:checked + label:before, 
+            input[type="checkbox"]:not(:checked) + label:before {
+                content: "";
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 18px;
+                height: 18px;
+                border: 1px solid $buttonTextColor;
+                background-color: $buttonTextColor;
+            }
+            input[type="checkbox"]:checked + label:before, 
+            input[type="checkbox"]:not(:checked) + label:before {
+                border-radius: 2px;
+            }
+            input[type="checkbox"]:checked + label:after, 
+            input[type="checkbox"]:not(:checked) + label:after {
+                content: "";
+                position: absolute;
+                -webkit-transition: all 0.2s ease;
+                -moz-transition: all 0.2s ease;
+                -o-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+            }
+            input[type="checkbox"]:checked + label:after, 
+            input[type="checkbox"]:not(:checked) + label:after {
+                left: 5px;
+                top: 5px;
+                width: 8px;
+                height: 4px;
+                border-radius: 1px;
+                border-left: 3px solid $bgColorTwo;
+                border-bottom: 3px solid $bgColorTwo;
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+            input[type="checkbox"]:not(:checked) + label:after {
+                opacity: 0;
+            }
+            input[type="checkbox"]:checked + label:after {
+                opacity: 1;
+            }
+            /*** Checkbox end ***/
+        }
+        .help-save {
+            display: flex;
+            margin-top: 38px;
+            p {
+                font-family: 'FuturaMediumC', Arial, Helvetica, sans-serif;
+                margin-top: 20px;
+                margin-left: 5px;
+                color: $buttonTextColor;
+                font-size: 20px;
+                line-height: 25px;
+                text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+            }
+        }
+    }
+}
+
+section.realize-fantasies {
+    display: flex;
+    height: 864px;
+    margin-top: 227px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/images/bg-fantasies.jpg');
+    .realize-list {
+        color: $bgColorTwo;
+        padding: 137px 0 0 99px;
+        .slider {
+            display: none;
+        }
+        h2 {
+            font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            line-height: 37px;
+            text-transform: uppercase;
+            color: $buttonTextColor;
+            width: 411px;
+        }
+        ul {
+            margin-top: 47px;
+            font-size: 20px;
+            line-height: 34px;
+            li {
+                font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+                margin-bottom: 15px;
+                display: table;
+            }
+            li:hover {
+                border-bottom: 1px solid $buttonTextColor;
+                color: $buttonTextColor;
+                cursor: pointer;
+            }
+        }
+    }
+    .first-images {
+        margin-left: 77px;
+        img:first-of-type {
+            margin: -40px 0 40px 0;
+        }
+    }
+    .second-images {
+        img:first-of-type {
+            margin: -110px 0 37px 0;
+        }
+    }
+}
+
+section.design-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 470px;
+    margin-top: 150px;
+    h2 {
+        font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+        position: relative;
+    }
+    img {
+        margin-top: 13px;
+    }
+    h2::before {
+        content: '';
+        position: absolute;
+        top: 190%;
+        left: 15%;
+        height: 1px;
+        width: 32px;
+        background-color: $buttonTextColor;
+    }
+    h2::after {
+        content: '';
+        position: absolute;
+        top: 190%;
+        right: 15%;
+        height: 1px;
+        width: 32px;
+        background-color: $buttonTextColor;
+    }
+    p {
+        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+        margin-top: 24px;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+    }
+    .project-offers {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 39px;
+        .mini {
+            display: flex;
+            justify-content: center;
+            height: 421px;
+            width: 392px;
+            margin-right: 30px;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../assets/images/mini.jpg);
+            .mini-block {
+                margin-top: 294px;
+                height: 211px;
+                width: 330px;
+                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+                background-color: $bgColorTwo;
+                h4 {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    padding: 25px 0 0 32px;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                ul {
+                    padding: 13px 0 0 50px;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #959595;
+                    li {
+                        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                        list-style: disc;
+                    }
+                }
+                .cost {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    color: $bgColorTwo;
+                    margin-top: 21px;
+                    height: 54px;
+                    width: 228px;
+                    background-color: $buttonTextColor;
+                    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .standart {
+            display: flex;
+            justify-content: center;
+            height: 421px;
+            width: 392px;
+            margin-right: 30px;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../assets/images/standart.jpg);
+            .standart-block {
+                margin-top: 294px;
+                height: 286px;
+                width: 330px;
+                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+                background-color: $bgColorTwo;
+                h4 {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    padding: 25px 0 0 32px;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                ul {
+                    padding: 13px 0 0 50px;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #959595;
+                    li {
+                        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                        list-style: disc;
+                    }
+                }
+                .cost {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    color: $bgColorTwo;
+                    margin-top: 22px;
+                    height: 54px;
+                    width: 228px;
+                    background-color: $buttonTextColor;
+                    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .full {
+            display: flex;
+            justify-content: center;
+            height: 421px;
+            width: 392px;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../assets/images/full.jpg);
+            .full-block {
+                margin-top: 294px;
+                height: 414px;
+                width: 330px;
+                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+                background-color: $bgColorTwo;
+                h4 {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    padding: 25px 0 0 32px;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                ul {
+                    padding: 13px 0 0 50px;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #959595;
+                    li {
+                        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                        list-style: disc;
+                    }
+                }
+                .cost {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    color: $bgColorTwo;
+                    margin-top: 31px;
+                    height: 54px;
+                    width: 228px;
+                    background-color: $buttonTextColor;
+                    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+section.steps {
+    display: flex;
+    height: 1142px;
+    background-color: $bgColorOne;
+    color: $bgColorTwo;
+    .wrapper {
+        display: flex;
+        margin-left: 99px;
+        margin-top: 428px;
+        .steps-to-goal {
+            display: flex;
+            flex-direction: column;
+            h4 {
+                font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                line-height: 21px;
+                text-transform: uppercase;
+            }
+            h2 {
+                display: flex;
+                position: relative;
+                font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                width: 150px;
+                margin-top: 18px;
+                font-size: 27px;
+                line-height: 37px;
+                letter-spacing: -0.07em;
+                text-transform: uppercase;
+                color: $buttonTextColor;
+            }
+            h2::after {
+                content: '';
+                position: absolute;
+                top: 75%;
+                left: 140%;
+                height: 1px;
+                width: 92px;
+                background-color: $buttonTextColor;
+            }
+            .page {
+                margin-top: 92px;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: uppercase;
+            }
+            h5 {
+                font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                margin-top: 22px;
+                font-size: 15px;
+                line-height: 23px;
+                text-transform: uppercase;
+                color: $buttonTextColor;
+            }
+            p {
+                font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                margin-top: 16px;
+                width: 337px;
+                font-size: 15px;
+                line-height: 25px;
+            }
+            .arrows-circles {
+                margin-top: 81px;
+                display: flex;
+                .left-arrow:hover {
+                    margin-left: -5px;
+                    margin-right: 5px;
+                    cursor: pointer;
+                }
+                .right-arrow:hover {
+                    margin-left: 5px;
+                    margin-right: -5px;
+                    cursor: pointer;
+                }
+            }
+            .arrows-circles .circle {
+                margin-left: 17px;
+                margin-top: 2px;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background-color: $bgColorTwo;
+                opacity: 0.3;
+            }
+            .arrows-circles .circle:first-of-type {
+                margin-left: 30px;
+            }
+            .arrows-circles .circle:last-of-type {
+                margin-right: 30px;
+            }
+            .arrows-circles .circle:hover {
+                opacity: 1;
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+        .steps-numbers {
+            display: flex;
+            flex-direction: column;
+            margin: 90px 0 0 136px;
+            section {
+                display: flex;
+                color: $bgColorTwo;
+                .field {
+                    opacity: 0.4;
+                    width: 160px;
+                    margin-right: 160px;
+                }
+                .field:last-of-type {
+                    margin: 0;
+                    width: 100px;
+                }
+                .number {
+                    display: table;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    border-bottom: 1px solid $buttonTextColor;
+                    text-transform: uppercase;
+                    text-align: left;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                .text-field {
+                    font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                    margin-top: 17px;
+                    font-size: 15px;
+                    line-height: 18px;
+                }
+                .field:hover {
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
+            section.second {
+                margin-top: 36px;
+            }
+            img {
+                margin-top: 44px;
+                height: 376px;
+                width: 765px;
+            }
+        }
+    }
+}
+
+section.our-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    background-color: $bgColorOne;
+    color: $bgColorTwo;
+    h2 {
+        font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        margin-top: 95px;
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+        position: relative;
+    }
+    h2::before {
+        content: '';
+        position: absolute;
+        top: 190%;
+        left: -5%;
+        height: 1px;
+        width: 32px;
+        background-color: $buttonTextColor;
+    }
+    h2::after {
+        content: '';
+        position: absolute;
+        top: 190%;
+        right: -5%;
+        height: 1px;
+        width: 32px;
+        background-color: $buttonTextColor;
+    }
+    img {
+        margin-top: 13px;
+    }
+    p:first-of-type {
+        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+        margin-top: 23px;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+    }
+    .team {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+        .first {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            height: 357px;
+            width: 272px;
+            margin-right: 105px;
+            background-image: url('../assets/images/first-person.jpg');
+            .first-info {
+                text-align: center;
+                margin-top: 277px;
+                height: 137px;
+                width: 233px;
+                box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+                background-color: $bgColorTwo;
+                .person-name {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: $bgColorOne;
+                }
+                .person-status {
+                    font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                    margin-top: 9px;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #959595;
+                }
+                .experience {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    color: $bgColorTwo;
+                    margin-top: 24px;
+                    height: 44px;
+                    width: 233px;
+                    background-color: $buttonTextColor;
+                    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+                    font-size: 13px;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                }
+                img {
+                    position: absolute;
+                    left: -20%;
+                    top: -18%;
+                }
+            }
+        }
+        .second {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            height: 357px;
+            width: 272px;
+            margin-right: 105px;
+            background-image: url('../assets/images/second-person.jpg');
+            .second-info {
+                text-align: center;
+                margin-top: 277px;
+                height: 137px;
+                width: 233px;
+                box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+                background-color: $bgColorTwo;
+                .person-name {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: $bgColorOne;
+                }
+                .person-status {
+                    font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                    margin-top: 9px;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #959595;
+                }
+                .experience {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    color: $bgColorTwo;
+                    margin-top: 24px;
+                    height: 44px;
+                    width: 233px;
+                    background-color: $buttonTextColor;
+                    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+                    font-size: 13px;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                }
+                img {
+                    position: absolute;
+                    left: -20%;
+                    top: -18%;
+                }
+            }
+        }
+        .third {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            height: 357px;
+            width: 272px;
+            background-image: url('../assets/images/third-person.jpg');
+            .third-info {
+                text-align: center;
+                margin-top: 277px;
+                height: 137px;
+                width: 233px;
+                box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+                background-color: $bgColorTwo;
+                .person-name {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: $bgColorOne;
+                }
+                .person-status {
+                    font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                    margin-top: 9px;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #959595;
+                }
+                .experience {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    color: $bgColorTwo;
+                    margin-top: 24px;
+                    height: 44px;
+                    width: 233px;
+                    background-color: $buttonTextColor;
+                    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+                    font-size: 13px;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                }
+                img {
+                    position: absolute;
+                    left: -20%;
+                    top: -18%;
+                }
+            }
+        }
+    }
+}
+
+section.our-clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    .line {
+        width: 55px;
+        height: 2px;
+        background-color: $buttonTextColor;
+    }
+    p:first-of-type {
+        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+        margin-top: 17px;
+        color: $bgColorOne;
+        font-size: 20px;
+        line-height: 34px;
+        text-align: center;
+    }
+    h2 {
+        font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        margin-top: 95px;
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+        position: relative;
+    }
+    h2::before {
+        content: '';
+        position: absolute;
+        top: 190%;
+        left: 5%;
+        height: 1px;
+        width: 32px;
+        background-color: $buttonTextColor;
+    }
+    h2::after {
+        content: '';
+        position: absolute;
+        top: 190%;
+        right: 5%;
+        height: 1px;
+        width: 32px;
+        background-color: $buttonTextColor;
+    }
+    img {
+        margin-top: 13px;
+    }
+    .recommend {
+        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+        margin-top: 24px;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+    }
+    .clients {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 39px;
+        .client {
+            display: flex;
+            flex-direction: column;
+            width: 376px;
+            height: 428px;
+            margin-right: 54px;
+            box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+            &:last-of-type {
+                margin-right: 0;
+            }
+            .client-info {
+                display: flex;
+                align-items: center;
+                img {
+                    border-radius: 50%;
+                }
+                span {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    margin: 8px 0 0 23px;
+                    font-size: 18px;
+                    line-height: 23px;
+                    color: #181818;
+                }
+            }
+            p {
+                font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                text-align: left;
+                font-size: 15px;
+                line-height: 180%;
+                color: #959595;
+            }
+            .m2-days {
+                display: flex;
+                align-items: center;
+                font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                margin-top: 56px;
+                height: 54px;
+                width: 293px;
+                background-color: $buttonTextColor;
+                box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+                img {
+                    margin: 2px 0 0 17px;
+                }
+                .v-line {
+                    margin-left: 14px;
+                    height: 54px;
+                    width: 1px;
+                    background-color: $bgColorTwo;
+                }
+                p {
+                    margin: 0 0 1px 15px;
+                    font-size: 17px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    color: $bgColorTwo;
+                }
+                p:first-of-type {
+                    margin: 0 0 1px 15px;
+                }
+            }
+        }
+    }
+    
+    .questions {
+        width: 883px;
+        height: 445px;
+        background-color: #181818;
+        margin: 131px 0 -225px;
+        h3 {
+            font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            margin-top: 33px;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $bgColorTwo;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+            .inline {
+                display: flex;
+                margin-top: 46px;
+                .block {
+                    display: flex;
+                    flex-direction: column;
+                    label {
+                        opacity: 0.5;
+                    }
+                    input {
+                        width: 231px;
+                    }
+                    &:first-of-type {
+                        margin-right: 57px;
+                    }
+                }
+            }
+            .question {
+                margin-top: 47px;
+                width: 517px;
+                input {  
+                    width: 517px;
+                }
+                label {
+                    opacity: 0.5;
+                }
+            }
+            label {
+                display: block;
+                color: $bgColorTwo;
+                font-size: 15px;
+                line-height: 20px;
+            }
+            input {
+                font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #3636367c;
+                color: $bgColorOne;
+                font-size: 18px;
+                line-height: 24px;
+                padding-bottom: 3px;
+            }
+            button.question-btn {
+                font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
+                margin-top: 48px;
+                width: 213px;
+                height: 51px;
+                color: $bgColorTwo;
+                font-size: 13px;
+                line-height: 18px;
+                outline: none;
+                border: none;
+                text-transform: uppercase;
+                background-color: $buttonTextColor;
+                box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+                &:hover {
+                    background-color: rgb(179, 144, 88);
+                    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+                    cursor: pointer;
+                }
+            }
+            input[type="text"] {
+                height: 50px;
+                font-size: 18px;
+                line-height: 25px;
+                margin-top: -20px;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #ffffff15;
+                background: none;
+                padding-top: 20px;
+            }
+            input::-webkit-input-placeholder {
+                color: $bgColorTwo;
+            } 
+            input::-moz-placeholder {
+                color: $bgColorTwo;
+            }
+            label:not(:first-of-type) {
+                margin-top: 48px;
+            }
+            label:not(:last-of-type) {
+                font-size: 15px;
+                line-height: 20px;
+                opacity: 0.5;
+            }
+            label:last-of-type {
+                margin-top: 2px;
+            }
+            
+            /*** Checkbox start ***/
+            input[type="checkbox"]:checked, 
+            input[type="checkbox"]:not(:checked) {
+                position: absolute;
+                left: -9999px;
+            }
+            input[type="checkbox"]:checked + label, 
+            input[type="checkbox"]:not(:checked) + label {
+                display: inline-block;
+                position: relative;
+                padding-left: 28px;
+                margin-top: 44px;
+                line-height: 20px;
+                cursor: pointer;
+            }
+            input[type="checkbox"]:checked + label:before, 
+            input[type="checkbox"]:not(:checked) + label:before {
+                content: "";
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 18px;
+                height: 18px;
+                border: 1px solid $buttonTextColor;
+                background-color: $buttonTextColor;
+            }
+            input[type="checkbox"]:checked + label:before, 
+            input[type="checkbox"]:not(:checked) + label:before {
+                border-radius: 2px;
+            }
+            input[type="checkbox"]:checked + label:after, 
+            input[type="checkbox"]:not(:checked) + label:after {
+                content: "";
+                position: absolute;
+                -webkit-transition: all 0.2s ease;
+                -moz-transition: all 0.2s ease;
+                -o-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+            }
+            input[type="checkbox"]:checked + label:after, 
+            input[type="checkbox"]:not(:checked) + label:after {
+                left: 5px;
+                top: 5px;
+                width: 8px;
+                height: 4px;
+                border-radius: 1px;
+                border-left: 3px solid $bgColorTwo;
+                border-bottom: 3px solid $bgColorTwo;
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+            input[type="checkbox"]:not(:checked) + label:after {
+                opacity: 0;
+            }
+            input[type="checkbox"]:checked + label:after {
+                opacity: 1;
+            }
+            /*** Checkbox end ***/
+        }
+    }
+}
+
+section.connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 954px;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url(../assets/images/bg-connect.jpg);
+    p {
+        font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        margin-top: 277px;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $buttonTextColor;
+        a {
+            color: $buttonTextColor;
+        }
+    }
+    .social-nets {
+        margin-top: 26px;
+        img:first-of-type {
+            margin-right: 15px;
+        }
+        img:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+    .map {
+        margin-top: 43px;
+        width: 925px;
+        height: 465px;
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 133px;
+    background-color: $bgColorOne;
+    text-transform: uppercase;
+    h1 {
+        font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
+        margin-left: 22px;
+        color: $buttonTextColor;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+    nav > ul {
+        display: flex;
+        a {
+            color: $bgColorTwo;
+        }
+        li:first-of-type a {
+            color: $buttonTextColor;
+        }
+        a:hover {
+            text-shadow: 2px 2px 5px #E3B873;
+            cursor: pointer;
+        }
+        li {
+            font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
+            margin-right: 40px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    .tel {
+        font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
+        color: $buttonTextColor;
+        font-size: 14px;
+        line-height: 16px;
+        border-bottom: 1px solid $buttonTextColor;
+    }
+    .request-button {
+        font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-size: 13px;
+        line-height: 15px;
+        color: $bgColorTwo;
+        width: 161px;
+        height: 37px;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+        border-radius: 2px;
+        border: none;
+        outline: none;
+        margin-right: 20px;
+        background-color: $buttonTextColor;
+        &:hover {
+            background-color: rgb(179, 144, 88);
+            box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+            cursor: pointer;
+        }
+    }
+}
+
+@import 'media';

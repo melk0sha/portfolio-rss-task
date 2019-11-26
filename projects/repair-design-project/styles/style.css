@@ -1,0 +1,2702 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../../assets/fonts/ProximaNova-Regular.eot");
+  src: url("../../assets/fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/ProximaNova-Regular.woff2") format("woff2"), url("../../assets/fonts/ProximaNova-Regular.woff") format("woff"), url("../../assets/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FuturaBookC";
+  src: url("../../assets/fonts/FuturaBookC.eot");
+  src: url("../../assets/fonts/FuturaBookC.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/FuturaBookC.woff2") format("woff2"), url("../../assets/fonts/FuturaBookC.woff") format("woff"), url("../../assets/fonts/FuturaBookC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FuturaDemiC";
+  src: url("../../assets/fonts/FuturaDemiC.eot");
+  src: url("../../assets/fonts/FuturaDemiC.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/FuturaDemiC.woff2") format("woff2"), url("../../assets/fonts/FuturaDemiC.woff") format("woff"), url("../../assets/fonts/FuturaDemiC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FuturaMediumC";
+  src: url("../../assets/fonts/FuturaMediumC.eot");
+  src: url("../../assets/fonts/FuturaMediumC.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/FuturaMediumC.woff2") format("woff2"), url("../../assets/fonts/FuturaMediumC.woff") format("woff"), url("../../assets/fonts/FuturaMediumC.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Yeseva One";
+  src: url("../../assets/fonts/YesevaOne.eot");
+  src: url("../../assets/fonts/YesevaOne.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/YesevaOne.woff2") format("woff2"), url("../../assets/fonts/YesevaOne.woff") format("woff"), url("../../assets/fonts/YesevaOne.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 83px;
+  background-color: #131313;
+  text-transform: uppercase;
+}
+header h1 {
+  color: #E3B873;
+  font-family: "FuturaDemiC", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+header nav > ul {
+  display: flex;
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+}
+header nav > ul a {
+  color: #ffffff;
+}
+header nav > ul li:first-of-type a {
+  color: #E3B873;
+}
+header nav > ul a:hover {
+  text-shadow: 2px 2px 5px #E3B873;
+  cursor: pointer;
+}
+header nav > ul li {
+  margin-right: 45px;
+  font-size: 14px;
+  line-height: 16px;
+}
+header .tel {
+  font-family: "FuturaDemiC", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #E3B873;
+  border-bottom: 1px solid #E3B873;
+}
+header .request-button {
+  font-family: "FuturaDemiC", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 161px;
+  height: 37px;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  background-color: #E3B873;
+}
+header .request-button:hover {
+  background-color: #b39058;
+  box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section.welcome {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 707px;
+}
+section.welcome .welcome-main {
+  display: flex;
+  background-color: #131313;
+}
+section.welcome .welcome-main a.instagram {
+  display: flex;
+  position: relative;
+  font-family: "FuturaDemiC", Arial, Helvetica, sans-serif;
+  align-self: center;
+  transform: rotate(90deg);
+  color: #E3B873;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+}
+section.welcome .welcome-main a.instagram::after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: -80%;
+  height: 1px;
+  width: 51px;
+  background-color: #E3B873;
+}
+section.welcome .welcome-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../assets/images/bg-welcome.png);
+  height: 707px;
+  width: 1358px;
+}
+section.welcome .welcome-info h2 {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  width: 600px;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 60px;
+}
+section.welcome .welcome-info h2 span {
+  color: #E3B873;
+}
+section.welcome .welcome-info p {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  width: 500px;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 30px;
+  margin-left: 60px;
+}
+section.welcome .welcome-info .buttons {
+  margin: 41px 0 0 60px;
+}
+section.welcome .welcome-info .buttons .calculate-button {
+  font-family: "FuturaDemiC", Arial, Helvetica, sans-serif;
+  width: 207px;
+  height: 51px;
+  color: #ffffff;
+  border: none;
+  font-size: 13px;
+  outline: none;
+  line-height: 15px;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  text-transform: uppercase;
+  background-color: #E3B873;
+}
+section.welcome .welcome-info .buttons .calculate-button:hover {
+  background-color: #b39058;
+  box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+  cursor: pointer;
+}
+section.welcome .welcome-info .buttons .submit-app-button {
+  font-family: "FuturaDemiC", Arial, Helvetica, sans-serif;
+  width: 207px;
+  height: 51px;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-left: 15px;
+}
+section.welcome .welcome-info .buttons .submit-app-button:hover {
+  background-color: rgba(179, 144, 88, 0.637);
+  box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+  cursor: pointer;
+}
+section.welcome .welcome-info .buttons .mobile-submit-app-button {
+  display: none;
+}
+section.welcome .scroll-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -49px;
+  width: 247px;
+  height: 97px;
+  background-color: #131313;
+}
+section.welcome .scroll-down h4 {
+  display: inline;
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+section.welcome .scroll-down img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+section.completed-projects {
+  display: flex;
+  flex-direction: column;
+  height: 1074px;
+  overflow: hidden;
+  background-color: #131313;
+}
+section.completed-projects ul {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 85px;
+}
+section.completed-projects ul li a:hover {
+  color: #E3B873;
+  opacity: 1;
+  border-bottom: 1px solid #E3B873;
+  cursor: pointer;
+}
+section.completed-projects ul li a {
+  margin-right: 50px;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.3;
+}
+section.completed-projects ul li:last-of-type a {
+  margin-right: 233px;
+}
+section.completed-projects .completed-main {
+  display: flex;
+  margin-left: 80px;
+}
+section.completed-projects .completed-main .completed-info {
+  display: flex;
+  flex-direction: column;
+}
+section.completed-projects .completed-main .completed-info h2 {
+  display: flex;
+  position: relative;
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  width: 100px;
+  margin-top: 40px;
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+section.completed-projects .completed-main .completed-info h2::after {
+  content: "";
+  position: absolute;
+  top: 75%;
+  left: 170%;
+  height: 1px;
+  width: 92px;
+  background-color: #E3B873;
+}
+section.completed-projects .completed-main .completed-info p {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  margin-top: 34px;
+  font-size: 18px;
+  line-height: 29px;
+  color: #ffffff;
+  width: 450px;
+}
+section.completed-projects .completed-main .completed-info table {
+  margin-top: 60px;
+  width: 442px;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 20px;
+}
+section.completed-projects .completed-main .completed-info table th {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #E3B873;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 18px;
+  line-height: 25px;
+}
+section.completed-projects .completed-main .completed-info table td {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  padding-bottom: 40px;
+  vertical-align: top;
+}
+section.completed-projects .completed-main .completed-info .arrows-circles {
+  margin-top: 81px;
+  display: flex;
+}
+section.completed-projects .completed-main .completed-info .arrows-circles .circle {
+  margin-left: 17px;
+  margin-top: 2px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+section.completed-projects .completed-main .completed-info .arrows-circles .circle:first-of-type {
+  margin-left: 30px;
+}
+section.completed-projects .completed-main .completed-info .arrows-circles .circle:last-of-type {
+  margin-right: 30px;
+}
+section.completed-projects .completed-main .completed-info .arrows-circles .circle:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+section.completed-projects .completed-main .completed-info .left-arrow:hover {
+  margin-left: -5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+section.completed-projects .completed-main .completed-info .right-arrow:hover {
+  margin-left: 5px;
+  margin-right: -5px;
+  cursor: pointer;
+}
+section.completed-projects .completed-main .slider {
+  display: flex;
+  position: relative;
+  margin-top: 45px;
+  margin-left: 60px;
+}
+section.completed-projects .completed-main .slider img {
+  margin-right: 21px;
+  box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.15);
+}
+section.completed-projects .completed-main .slider .slider-arrow-left {
+  display: none;
+}
+section.completed-projects .completed-main .slider .slider-arrow-right {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  left: 55%;
+  top: 45%;
+  border-radius: 50%;
+  background-color: #E3B873;
+  box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+}
+section.completed-projects .completed-main .slider .slider-arrow-right img {
+  padding: 20px 0 0 22px;
+}
+section.completed-projects .completed-main .slider .slider-arrow-right:hover {
+  background-color: #b39058;
+  box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+  cursor: pointer;
+}
+section.completed-projects .online-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 91px;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+section.completed-projects .online-control img {
+  margin-top: 12px;
+}
+section.completed-projects .online-control h4 {
+  position: relative;
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+section.completed-projects .online-control h4::after {
+  content: "";
+  position: absolute;
+  top: 190%;
+  left: 65%;
+  height: 1px;
+  width: 32px;
+  background-color: #E3B873;
+}
+section.completed-projects .online-control h4::before {
+  content: "";
+  position: absolute;
+  top: 190%;
+  left: 18%;
+  height: 1px;
+  width: 32px;
+  background-color: #E3B873;
+}
+
+.repair-video {
+  margin-top: -160px;
+  display: flex;
+  justify-content: center;
+}
+.repair-video iframe {
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+section.request-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.request-field p {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  position: relative;
+  font-size: 20px;
+  line-height: 34px;
+  width: 700px;
+  text-align: center;
+}
+section.request-field p::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 47%;
+  height: 1px;
+  width: 55px;
+  background-color: #E3B873;
+}
+section.request-field form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 91px;
+}
+section.request-field form .submit-line {
+  display: flex;
+}
+section.request-field form .submit-line label {
+  display: block;
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  opacity: 0.5;
+  font-size: 15px;
+  line-height: 20px;
+}
+section.request-field form .submit-line input {
+  border: none;
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  outline: none;
+  border-bottom: 1px solid #3636367c;
+  color: #131313;
+  font-size: 18px;
+  line-height: 24px;
+  margin-right: 50px;
+  padding-bottom: 3px;
+}
+section.request-field form .submit-line input::-webkit-input-placeholder {
+  color: black;
+}
+section.request-field form .submit-line input::-moz-placeholder {
+  color: black;
+}
+section.request-field form .submit-line button.submit-your-info {
+  width: 200px;
+  font-family: "FuturaDemiC", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+  border-radius: 2px;
+}
+section.request-field form .submit-line button.submit-your-info:hover {
+  background-color: #b39058;
+  box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+  cursor: pointer;
+}
+section.request-field form .checkbox-line {
+  display: flex;
+  align-items: center;
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  margin-top: 33px;
+  /*** Checkbox start ***/
+  /*** Checkbox end ***/
+}
+section.request-field form .checkbox-line input[type=checkbox]:checked,
+section.request-field form .checkbox-line input[type=checkbox]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+section.request-field form .checkbox-line input[type=checkbox]:checked + label,
+section.request-field form .checkbox-line input[type=checkbox]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+}
+section.request-field form .checkbox-line input[type=checkbox]:checked + label:before,
+section.request-field form .checkbox-line input[type=checkbox]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dddddd;
+  background-color: #E3B873;
+}
+section.request-field form .checkbox-line input[type=checkbox]:checked + label:before,
+section.request-field form .checkbox-line input[type=checkbox]:not(:checked) + label:before {
+  border-radius: 2px;
+}
+section.request-field form .checkbox-line input[type=checkbox]:checked + label:after,
+section.request-field form .checkbox-line input[type=checkbox]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+section.request-field form .checkbox-line input[type=checkbox]:checked + label:after,
+section.request-field form .checkbox-line input[type=checkbox]:not(:checked) + label:after {
+  left: 5px;
+  top: 5px;
+  width: 8px;
+  height: 4px;
+  border-radius: 1px;
+  border-left: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+section.request-field form .checkbox-line input[type=checkbox]:not(:checked) + label:after {
+  opacity: 0;
+}
+section.request-field form .checkbox-line input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+section.request-field form .checkbox-line label {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+section.types-of-repair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 147px;
+}
+section.types-of-repair h2 {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  position: relative;
+}
+section.types-of-repair img {
+  margin-top: 13px;
+}
+section.types-of-repair h2::before {
+  content: "";
+  position: absolute;
+  top: 190%;
+  left: 15%;
+  height: 1px;
+  width: 32px;
+  background-color: #E3B873;
+}
+section.types-of-repair h2::after {
+  content: "";
+  position: absolute;
+  top: 190%;
+  right: 15%;
+  height: 1px;
+  width: 32px;
+  background-color: #E3B873;
+}
+section.types-of-repair .types-offers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 31px;
+}
+section.types-of-repair .types-offers .first-offer {
+  display: flex;
+  justify-content: center;
+  height: 421px;
+  width: 392px;
+  margin-right: 30px;
+  background-image: url(../assets/images/redecorating.png);
+}
+section.types-of-repair .types-offers .first-offer .first {
+  margin-top: 350px;
+  height: 286px;
+  width: 330px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+}
+section.types-of-repair .types-offers .first-offer .first h4 {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  padding: 25px 0 0 32px;
+  font-size: 18px;
+  line-height: 25px;
+}
+section.types-of-repair .types-offers .first-offer .first ul {
+  padding: 13px 0 0 50px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+section.types-of-repair .types-offers .first-offer .first ul li {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  list-style: disc;
+}
+section.types-of-repair .types-offers .first-offer .first .cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  margin-top: 21px;
+  height: 54px;
+  width: 228px;
+  background-color: #E3B873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+section.types-of-repair .types-offers .second-offer {
+  display: flex;
+  justify-content: center;
+  height: 421px;
+  width: 392px;
+  margin-right: 30px;
+  background-image: url(../assets/images/overhaul.png);
+}
+section.types-of-repair .types-offers .second-offer .second {
+  margin-top: 350px;
+  height: 286px;
+  width: 330px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+}
+section.types-of-repair .types-offers .second-offer .second h4 {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  padding: 25px 0 0 32px;
+  font-size: 18px;
+  line-height: 25px;
+}
+section.types-of-repair .types-offers .second-offer .second ul {
+  padding: 13px 0 0 50px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+section.types-of-repair .types-offers .second-offer .second ul li {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  list-style: disc;
+}
+section.types-of-repair .types-offers .second-offer .second .cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  margin-top: 21px;
+  height: 54px;
+  width: 228px;
+  background-color: #E3B873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+section.types-of-repair .types-offers .third-offer {
+  display: flex;
+  justify-content: center;
+  height: 421px;
+  width: 392px;
+  background-image: url(../assets/images/designer-repair.png);
+}
+section.types-of-repair .types-offers .third-offer .third {
+  margin-top: 350px;
+  height: 286px;
+  width: 330px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+}
+section.types-of-repair .types-offers .third-offer .third h4 {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  padding: 25px 0 0 32px;
+  font-size: 18px;
+  line-height: 25px;
+}
+section.types-of-repair .types-offers .third-offer .third ul {
+  padding: 13px 0 0 50px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+section.types-of-repair .types-offers .third-offer .third ul li {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  list-style: disc;
+}
+section.types-of-repair .types-offers .third-offer .third .cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  margin-top: 21px;
+  height: 54px;
+  width: 228px;
+  background-color: #E3B873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+section.virtues-call {
+  display: flex;
+  margin-top: 360px;
+}
+section.virtues-call .circles {
+  font-family: "FuturaMediumC", Arial, Helvetica, sans-serif;
+  position: relative;
+  width: 833px;
+}
+section.virtues-call .circles .ellipse {
+  width: 636px;
+  height: 636px;
+  border-radius: 50%;
+  margin-left: -120px;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, #fff 0%, #fff 20%, #fff 20%, #E3B873 100%) border-box;
+  border: 3px solid transparent;
+  z-index: 2;
+}
+section.virtues-call .circles img {
+  position: absolute;
+  height: 636px;
+  top: -5%;
+}
+section.virtues-call .circles .circle:nth-of-type(2) {
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10%;
+  left: 47%;
+  height: 41px;
+  width: 41px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  background-color: #E3B873;
+}
+section.virtues-call .circles .circle:nth-of-type(2)::after {
+  content: "Our specialist will arrive for measurements per day contact, or appoint a date convenient for you";
+  position: absolute;
+  left: 140%;
+  color: #131313;
+  font-size: 18px;
+  line-height: 21px;
+  width: 365px;
+}
+section.virtues-call .circles .circle:nth-of-type(3) {
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 27%;
+  left: 56%;
+  height: 41px;
+  width: 41px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  background-color: #E3B873;
+}
+section.virtues-call .circles .circle:nth-of-type(3)::after {
+  content: "Free metering";
+  position: absolute;
+  left: 140%;
+  color: #131313;
+  font-size: 18px;
+  line-height: 21px;
+  width: 365px;
+}
+section.virtues-call .circles .circle:nth-of-type(4) {
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 58%;
+  height: 41px;
+  width: 41px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  background-color: #E3B873;
+  z-index: 1;
+}
+section.virtues-call .circles .circle:nth-of-type(4)::after {
+  content: "Free consultation";
+  position: absolute;
+  left: 140%;
+  color: #131313;
+  font-size: 18px;
+  line-height: 21px;
+  width: 365px;
+}
+section.virtues-call .circles .circle:nth-of-type(5) {
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 73%;
+  left: 52%;
+  height: 41px;
+  width: 41px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  background-color: #E3B873;
+  z-index: 1;
+}
+section.virtues-call .circles .circle:nth-of-type(5)::after {
+  content: "Get a cost estimate and the timing of your future repairs";
+  position: absolute;
+  left: 140%;
+  color: #131313;
+  font-size: 18px;
+  line-height: 21px;
+  width: 220px;
+}
+section.virtues-call .form-save {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+section.virtues-call .form-save .call-form {
+  font-family: "FuturaMediumC", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  height: 509px;
+  width: 506px;
+  background-color: #131313;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+  /*** Checkbox start ***/
+  /*** Checkbox end ***/
+}
+section.virtues-call .form-save .call-form h3 {
+  font-family: "FuturaDemiC", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  padding-top: 28px;
+}
+section.virtues-call .form-save .call-form form {
+  display: flex;
+  flex-direction: column;
+  padding: 39px 49px 27px 49px;
+}
+section.virtues-call .form-save .call-form button.call-the-measurer {
+  align-self: flex-end;
+  font-family: "FuturaDemiC", Arial, Helvetica, sans-serif;
+  margin-top: 54px;
+  width: 213px;
+  height: 51px;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+}
+section.virtues-call .form-save .call-form button.call-the-measurer:hover {
+  background-color: #b39058;
+  box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+  cursor: pointer;
+}
+section.virtues-call .form-save .call-form input[type=text] {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  height: 50px;
+  width: 408px;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: -20px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ffffff15;
+  background: none;
+  padding-top: 20px;
+}
+section.virtues-call .form-save .call-form input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+section.virtues-call .form-save .call-form input::-moz-placeholder {
+  color: #ffffff;
+}
+section.virtues-call .form-save .call-form label:not(:first-of-type) {
+  margin-top: 48px;
+}
+section.virtues-call .form-save .call-form label:not(:last-of-type) {
+  font-size: 15px;
+  line-height: 20px;
+  opacity: 0.5;
+}
+section.virtues-call .form-save .call-form label:last-of-type {
+  margin-top: 2px;
+}
+section.virtues-call .form-save .call-form input[type=checkbox]:checked,
+section.virtues-call .form-save .call-form input[type=checkbox]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+section.virtues-call .form-save .call-form input[type=checkbox]:checked + label,
+section.virtues-call .form-save .call-form input[type=checkbox]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+}
+section.virtues-call .form-save .call-form input[type=checkbox]:checked + label:before,
+section.virtues-call .form-save .call-form input[type=checkbox]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #E3B873;
+  background-color: #E3B873;
+}
+section.virtues-call .form-save .call-form input[type=checkbox]:checked + label:before,
+section.virtues-call .form-save .call-form input[type=checkbox]:not(:checked) + label:before {
+  border-radius: 2px;
+}
+section.virtues-call .form-save .call-form input[type=checkbox]:checked + label:after,
+section.virtues-call .form-save .call-form input[type=checkbox]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+section.virtues-call .form-save .call-form input[type=checkbox]:checked + label:after,
+section.virtues-call .form-save .call-form input[type=checkbox]:not(:checked) + label:after {
+  left: 5px;
+  top: 5px;
+  width: 8px;
+  height: 4px;
+  border-radius: 1px;
+  border-left: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+section.virtues-call .form-save .call-form input[type=checkbox]:not(:checked) + label:after {
+  opacity: 0;
+}
+section.virtues-call .form-save .call-form input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+section.virtues-call .form-save .help-save {
+  display: flex;
+  margin-top: 38px;
+}
+section.virtues-call .form-save .help-save p {
+  font-family: "FuturaMediumC", Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  margin-left: 5px;
+  color: #E3B873;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+section.realize-fantasies {
+  display: flex;
+  height: 864px;
+  margin-top: 227px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/images/bg-fantasies.jpg");
+}
+section.realize-fantasies .realize-list {
+  color: #ffffff;
+  padding: 137px 0 0 99px;
+}
+section.realize-fantasies .realize-list .slider {
+  display: none;
+}
+section.realize-fantasies .realize-list h2 {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #E3B873;
+  width: 411px;
+}
+section.realize-fantasies .realize-list ul {
+  margin-top: 47px;
+  font-size: 20px;
+  line-height: 34px;
+}
+section.realize-fantasies .realize-list ul li {
+  font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+  display: table;
+}
+section.realize-fantasies .realize-list ul li:hover {
+  border-bottom: 1px solid #E3B873;
+  color: #E3B873;
+  cursor: pointer;
+}
+section.realize-fantasies .first-images {
+  margin-left: 77px;
+}
+section.realize-fantasies .first-images img:first-of-type {
+  margin: -40px 0 40px 0;
+}
+section.realize-fantasies .second-images img:first-of-type {
+  margin: -110px 0 37px 0;
+}
+
+section.design-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 470px;
+  margin-top: 150px;
+}
+section.design-project h2 {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  position: relative;
+}
+section.design-project img {
+  margin-top: 13px;
+}
+section.design-project h2::before {
+  content: "";
+  position: absolute;
+  top: 190%;
+  left: 15%;
+  height: 1px;
+  width: 32px;
+  background-color: #E3B873;
+}
+section.design-project h2::after {
+  content: "";
+  position: absolute;
+  top: 190%;
+  right: 15%;
+  height: 1px;
+  width: 32px;
+  background-color: #E3B873;
+}
+section.design-project p {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  margin-top: 24px;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+section.design-project .project-offers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 39px;
+}
+section.design-project .project-offers .mini {
+  display: flex;
+  justify-content: center;
+  height: 421px;
+  width: 392px;
+  margin-right: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../assets/images/mini.jpg);
+}
+section.design-project .project-offers .mini .mini-block {
+  margin-top: 294px;
+  height: 211px;
+  width: 330px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+}
+section.design-project .project-offers .mini .mini-block h4 {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  padding: 25px 0 0 32px;
+  font-size: 18px;
+  line-height: 25px;
+}
+section.design-project .project-offers .mini .mini-block ul {
+  padding: 13px 0 0 50px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+section.design-project .project-offers .mini .mini-block ul li {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  list-style: disc;
+}
+section.design-project .project-offers .mini .mini-block .cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  margin-top: 21px;
+  height: 54px;
+  width: 228px;
+  background-color: #E3B873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+section.design-project .project-offers .standart {
+  display: flex;
+  justify-content: center;
+  height: 421px;
+  width: 392px;
+  margin-right: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../assets/images/standart.jpg);
+}
+section.design-project .project-offers .standart .standart-block {
+  margin-top: 294px;
+  height: 286px;
+  width: 330px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+}
+section.design-project .project-offers .standart .standart-block h4 {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  padding: 25px 0 0 32px;
+  font-size: 18px;
+  line-height: 25px;
+}
+section.design-project .project-offers .standart .standart-block ul {
+  padding: 13px 0 0 50px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+section.design-project .project-offers .standart .standart-block ul li {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  list-style: disc;
+}
+section.design-project .project-offers .standart .standart-block .cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  margin-top: 22px;
+  height: 54px;
+  width: 228px;
+  background-color: #E3B873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+section.design-project .project-offers .full {
+  display: flex;
+  justify-content: center;
+  height: 421px;
+  width: 392px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../assets/images/full.jpg);
+}
+section.design-project .project-offers .full .full-block {
+  margin-top: 294px;
+  height: 414px;
+  width: 330px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+}
+section.design-project .project-offers .full .full-block h4 {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  padding: 25px 0 0 32px;
+  font-size: 18px;
+  line-height: 25px;
+}
+section.design-project .project-offers .full .full-block ul {
+  padding: 13px 0 0 50px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+section.design-project .project-offers .full .full-block ul li {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  list-style: disc;
+}
+section.design-project .project-offers .full .full-block .cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  margin-top: 31px;
+  height: 54px;
+  width: 228px;
+  background-color: #E3B873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+section.steps {
+  display: flex;
+  height: 1142px;
+  background-color: #131313;
+  color: #ffffff;
+}
+section.steps .wrapper {
+  display: flex;
+  margin-left: 99px;
+  margin-top: 428px;
+}
+section.steps .wrapper .steps-to-goal {
+  display: flex;
+  flex-direction: column;
+}
+section.steps .wrapper .steps-to-goal h4 {
+  font-family: "FuturaDemiC", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+section.steps .wrapper .steps-to-goal h2 {
+  display: flex;
+  position: relative;
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  width: 150px;
+  margin-top: 18px;
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+section.steps .wrapper .steps-to-goal h2::after {
+  content: "";
+  position: absolute;
+  top: 75%;
+  left: 140%;
+  height: 1px;
+  width: 92px;
+  background-color: #E3B873;
+}
+section.steps .wrapper .steps-to-goal .page {
+  margin-top: 92px;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+section.steps .wrapper .steps-to-goal h5 {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 22px;
+  font-size: 15px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+section.steps .wrapper .steps-to-goal p {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  margin-top: 16px;
+  width: 337px;
+  font-size: 15px;
+  line-height: 25px;
+}
+section.steps .wrapper .steps-to-goal .arrows-circles {
+  margin-top: 81px;
+  display: flex;
+}
+section.steps .wrapper .steps-to-goal .arrows-circles .left-arrow:hover {
+  margin-left: -5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+section.steps .wrapper .steps-to-goal .arrows-circles .right-arrow:hover {
+  margin-left: 5px;
+  margin-right: -5px;
+  cursor: pointer;
+}
+section.steps .wrapper .steps-to-goal .arrows-circles .circle {
+  margin-left: 17px;
+  margin-top: 2px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+section.steps .wrapper .steps-to-goal .arrows-circles .circle:first-of-type {
+  margin-left: 30px;
+}
+section.steps .wrapper .steps-to-goal .arrows-circles .circle:last-of-type {
+  margin-right: 30px;
+}
+section.steps .wrapper .steps-to-goal .arrows-circles .circle:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+section.steps .wrapper .steps-numbers {
+  display: flex;
+  flex-direction: column;
+  margin: 90px 0 0 136px;
+}
+section.steps .wrapper .steps-numbers section {
+  display: flex;
+  color: #ffffff;
+}
+section.steps .wrapper .steps-numbers section .field {
+  opacity: 0.4;
+  width: 160px;
+  margin-right: 160px;
+}
+section.steps .wrapper .steps-numbers section .field:last-of-type {
+  margin: 0;
+  width: 100px;
+}
+section.steps .wrapper .steps-numbers section .number {
+  display: table;
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  border-bottom: 1px solid #E3B873;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 18px;
+  line-height: 25px;
+}
+section.steps .wrapper .steps-numbers section .text-field {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  margin-top: 17px;
+  font-size: 15px;
+  line-height: 18px;
+}
+section.steps .wrapper .steps-numbers section .field:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+section.steps .wrapper .steps-numbers section.second {
+  margin-top: 36px;
+}
+section.steps .wrapper .steps-numbers img {
+  margin-top: 44px;
+  height: 376px;
+  width: 765px;
+}
+
+section.our-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  background-color: #131313;
+  color: #ffffff;
+}
+section.our-team h2 {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 95px;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  position: relative;
+}
+section.our-team h2::before {
+  content: "";
+  position: absolute;
+  top: 190%;
+  left: -5%;
+  height: 1px;
+  width: 32px;
+  background-color: #E3B873;
+}
+section.our-team h2::after {
+  content: "";
+  position: absolute;
+  top: 190%;
+  right: -5%;
+  height: 1px;
+  width: 32px;
+  background-color: #E3B873;
+}
+section.our-team img {
+  margin-top: 13px;
+}
+section.our-team p:first-of-type {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  margin-top: 23px;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+section.our-team .team {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+section.our-team .team .first {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 357px;
+  width: 272px;
+  margin-right: 105px;
+  background-image: url("../assets/images/first-person.jpg");
+}
+section.our-team .team .first .first-info {
+  text-align: center;
+  margin-top: 277px;
+  height: 137px;
+  width: 233px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+}
+section.our-team .team .first .first-info .person-name {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #131313;
+}
+section.our-team .team .first .first-info .person-status {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  margin-top: 9px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #959595;
+}
+section.our-team .team .first .first-info .experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  margin-top: 24px;
+  height: 44px;
+  width: 233px;
+  background-color: #E3B873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+section.our-team .team .first .first-info img {
+  position: absolute;
+  left: -20%;
+  top: -18%;
+}
+section.our-team .team .second {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 357px;
+  width: 272px;
+  margin-right: 105px;
+  background-image: url("../assets/images/second-person.jpg");
+}
+section.our-team .team .second .second-info {
+  text-align: center;
+  margin-top: 277px;
+  height: 137px;
+  width: 233px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+}
+section.our-team .team .second .second-info .person-name {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #131313;
+}
+section.our-team .team .second .second-info .person-status {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  margin-top: 9px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #959595;
+}
+section.our-team .team .second .second-info .experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  margin-top: 24px;
+  height: 44px;
+  width: 233px;
+  background-color: #E3B873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+section.our-team .team .second .second-info img {
+  position: absolute;
+  left: -20%;
+  top: -18%;
+}
+section.our-team .team .third {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 357px;
+  width: 272px;
+  background-image: url("../assets/images/third-person.jpg");
+}
+section.our-team .team .third .third-info {
+  text-align: center;
+  margin-top: 277px;
+  height: 137px;
+  width: 233px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+}
+section.our-team .team .third .third-info .person-name {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #131313;
+}
+section.our-team .team .third .third-info .person-status {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  margin-top: 9px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #959595;
+}
+section.our-team .team .third .third-info .experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  margin-top: 24px;
+  height: 44px;
+  width: 233px;
+  background-color: #E3B873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+section.our-team .team .third .third-info img {
+  position: absolute;
+  left: -20%;
+  top: -18%;
+}
+
+section.our-clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300px;
+}
+section.our-clients .line {
+  width: 55px;
+  height: 2px;
+  background-color: #E3B873;
+}
+section.our-clients p:first-of-type {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  margin-top: 17px;
+  color: #131313;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+}
+section.our-clients h2 {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 95px;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  position: relative;
+}
+section.our-clients h2::before {
+  content: "";
+  position: absolute;
+  top: 190%;
+  left: 5%;
+  height: 1px;
+  width: 32px;
+  background-color: #E3B873;
+}
+section.our-clients h2::after {
+  content: "";
+  position: absolute;
+  top: 190%;
+  right: 5%;
+  height: 1px;
+  width: 32px;
+  background-color: #E3B873;
+}
+section.our-clients img {
+  margin-top: 13px;
+}
+section.our-clients .recommend {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  margin-top: 24px;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+section.our-clients .clients {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 39px;
+}
+section.our-clients .clients .client {
+  display: flex;
+  flex-direction: column;
+  width: 376px;
+  height: 428px;
+  margin-right: 54px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+section.our-clients .clients .client:last-of-type {
+  margin-right: 0;
+}
+section.our-clients .clients .client .client-info {
+  display: flex;
+  align-items: center;
+}
+section.our-clients .clients .client .client-info img {
+  border-radius: 50%;
+}
+section.our-clients .clients .client .client-info span {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin: 8px 0 0 23px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #181818;
+}
+section.our-clients .clients .client p {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: 15px;
+  line-height: 180%;
+  color: #959595;
+}
+section.our-clients .clients .client .m2-days {
+  display: flex;
+  align-items: center;
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 56px;
+  height: 54px;
+  width: 293px;
+  background-color: #E3B873;
+  box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+}
+section.our-clients .clients .client .m2-days img {
+  margin: 2px 0 0 17px;
+}
+section.our-clients .clients .client .m2-days .v-line {
+  margin-left: 14px;
+  height: 54px;
+  width: 1px;
+  background-color: #ffffff;
+}
+section.our-clients .clients .client .m2-days p {
+  margin: 0 0 1px 15px;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+section.our-clients .clients .client .m2-days p:first-of-type {
+  margin: 0 0 1px 15px;
+}
+section.our-clients .questions {
+  width: 883px;
+  height: 445px;
+  background-color: #181818;
+  margin: 131px 0 -225px;
+}
+section.our-clients .questions h3 {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 33px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+section.our-clients .questions form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  /*** Checkbox start ***/
+  /*** Checkbox end ***/
+}
+section.our-clients .questions form .inline {
+  display: flex;
+  margin-top: 46px;
+}
+section.our-clients .questions form .inline .block {
+  display: flex;
+  flex-direction: column;
+}
+section.our-clients .questions form .inline .block label {
+  opacity: 0.5;
+}
+section.our-clients .questions form .inline .block input {
+  width: 231px;
+}
+section.our-clients .questions form .inline .block:first-of-type {
+  margin-right: 57px;
+}
+section.our-clients .questions form .question {
+  margin-top: 47px;
+  width: 517px;
+}
+section.our-clients .questions form .question input {
+  width: 517px;
+}
+section.our-clients .questions form .question label {
+  opacity: 0.5;
+}
+section.our-clients .questions form label {
+  display: block;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 20px;
+}
+section.our-clients .questions form input {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #3636367c;
+  color: #131313;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 3px;
+}
+section.our-clients .questions form button.question-btn {
+  font-family: "FuturaDemiC", Arial, Helvetica, sans-serif;
+  margin-top: 48px;
+  width: 213px;
+  height: 51px;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+}
+section.our-clients .questions form button.question-btn:hover {
+  background-color: #b39058;
+  box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+  cursor: pointer;
+}
+section.our-clients .questions form input[type=text] {
+  height: 50px;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: -20px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ffffff15;
+  background: none;
+  padding-top: 20px;
+}
+section.our-clients .questions form input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+section.our-clients .questions form input::-moz-placeholder {
+  color: #ffffff;
+}
+section.our-clients .questions form label:not(:first-of-type) {
+  margin-top: 48px;
+}
+section.our-clients .questions form label:not(:last-of-type) {
+  font-size: 15px;
+  line-height: 20px;
+  opacity: 0.5;
+}
+section.our-clients .questions form label:last-of-type {
+  margin-top: 2px;
+}
+section.our-clients .questions form input[type=checkbox]:checked,
+section.our-clients .questions form input[type=checkbox]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+section.our-clients .questions form input[type=checkbox]:checked + label,
+section.our-clients .questions form input[type=checkbox]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  margin-top: 44px;
+  line-height: 20px;
+  cursor: pointer;
+}
+section.our-clients .questions form input[type=checkbox]:checked + label:before,
+section.our-clients .questions form input[type=checkbox]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #E3B873;
+  background-color: #E3B873;
+}
+section.our-clients .questions form input[type=checkbox]:checked + label:before,
+section.our-clients .questions form input[type=checkbox]:not(:checked) + label:before {
+  border-radius: 2px;
+}
+section.our-clients .questions form input[type=checkbox]:checked + label:after,
+section.our-clients .questions form input[type=checkbox]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+section.our-clients .questions form input[type=checkbox]:checked + label:after,
+section.our-clients .questions form input[type=checkbox]:not(:checked) + label:after {
+  left: 5px;
+  top: 5px;
+  width: 8px;
+  height: 4px;
+  border-radius: 1px;
+  border-left: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+section.our-clients .questions form input[type=checkbox]:not(:checked) + label:after {
+  opacity: 0;
+}
+section.our-clients .questions form input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+section.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 954px;
+  background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url(../assets/images/bg-connect.jpg);
+}
+section.connect p {
+  font-family: "Yeseva One", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 277px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+section.connect p a {
+  color: #E3B873;
+}
+section.connect .social-nets {
+  margin-top: 26px;
+}
+section.connect .social-nets img:first-of-type {
+  margin-right: 15px;
+}
+section.connect .social-nets img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+section.connect .map {
+  margin-top: 43px;
+  width: 925px;
+  height: 465px;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 133px;
+  background-color: #131313;
+  text-transform: uppercase;
+}
+footer h1 {
+  font-family: "FuturaDemiC", Arial, Helvetica, sans-serif;
+  margin-left: 22px;
+  color: #E3B873;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+footer nav > ul {
+  display: flex;
+}
+footer nav > ul a {
+  color: #ffffff;
+}
+footer nav > ul li:first-of-type a {
+  color: #E3B873;
+}
+footer nav > ul a:hover {
+  text-shadow: 2px 2px 5px #E3B873;
+  cursor: pointer;
+}
+footer nav > ul li {
+  font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
+  margin-right: 40px;
+  font-size: 14px;
+  line-height: 16px;
+}
+footer .tel {
+  font-family: "FuturaDemiC", Arial, Helvetica, sans-serif;
+  color: #E3B873;
+  font-size: 14px;
+  line-height: 16px;
+  border-bottom: 1px solid #E3B873;
+}
+footer .request-button {
+  font-family: "FuturaDemiC", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 15px;
+  color: #ffffff;
+  width: 161px;
+  height: 37px;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  margin-right: 20px;
+  background-color: #E3B873;
+}
+footer .request-button:hover {
+  background-color: #b39058;
+  box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 375px) and (max-width: 700px) {
+  header {
+    width: 100%;
+    height: 57px;
+  }
+  header h1 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  header nav {
+    display: none;
+  }
+  header a.tel {
+    color: #ffffff;
+    border: none;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  header button {
+    display: none;
+  }
+
+  section.welcome {
+    width: 100%;
+    height: 476px;
+  }
+  section.welcome .welcome-main {
+    display: unset;
+    background-color: unset;
+  }
+  section.welcome .welcome-main a.instagram {
+    display: none;
+  }
+  section.welcome .welcome-main a.instagram::before, section.welcome .welcome-main a.instagram::after {
+    display: none;
+  }
+  section.welcome .welcome-main .welcome-info {
+    width: 100%;
+    height: 476px;
+  }
+  section.welcome .welcome-main .welcome-info h2 {
+    width: 340px;
+    font-size: 23px;
+    line-height: 132.83%;
+    margin-left: 18px;
+  }
+  section.welcome .welcome-main .welcome-info p {
+    width: 310px;
+    font-size: 18px;
+    line-height: 135.84%;
+    margin: 16px 0 0 18px;
+  }
+  section.welcome .welcome-main .welcome-info .buttons {
+    margin: 32px 0 0 18px;
+  }
+  section.welcome .welcome-main .welcome-info .buttons .calculate-button {
+    width: 338px;
+  }
+  section.welcome .welcome-main .welcome-info .buttons .submit-app-button {
+    display: none;
+  }
+  section.welcome .welcome-main .welcome-info .buttons .mobile-submit-app-button {
+    display: unset;
+    margin: 26px 0 0 0;
+    width: 338px;
+    height: 51px;
+    font-family: "FuturaDemiC", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    outline: none;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+  section.welcome .scroll-down {
+    display: none;
+  }
+
+  section.completed-projects {
+    width: 100%;
+    height: 851px;
+    position: relative;
+  }
+  section.completed-projects ul {
+    display: none;
+  }
+  section.completed-projects .completed-main {
+    margin-left: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+  section.completed-projects .completed-main .completed-info {
+    align-items: center;
+  }
+  section.completed-projects .completed-main .completed-info h2 {
+    position: unset;
+    width: 200px;
+    margin-top: 36px;
+    font-size: 22px;
+    line-height: 138.6%;
+    text-align: center;
+    letter-spacing: -0.07em;
+  }
+  section.completed-projects .completed-main .completed-info h2:after {
+    display: none;
+  }
+  section.completed-projects .completed-main .completed-info p {
+    margin-top: 22px;
+    width: 311px;
+    font-size: 14px;
+    line-height: 158.48%;
+    text-align: center;
+  }
+  section.completed-projects .completed-main .completed-info table {
+    margin-top: 314px;
+    width: 340px;
+    font-size: 14px;
+    line-height: 138.6%;
+  }
+  section.completed-projects .completed-main .completed-info .arrows-circles {
+    display: none;
+  }
+  section.completed-projects .completed-main .slider {
+    position: absolute;
+    left: 18px;
+    top: 246px;
+    margin: 0;
+  }
+  section.completed-projects .completed-main .slider .slider-img-1 {
+    display: none;
+  }
+  section.completed-projects .completed-main .slider .slider-img-2 {
+    width: 340px;
+    height: 241px;
+  }
+  section.completed-projects .completed-main .slider img {
+    margin-right: 0;
+  }
+  section.completed-projects .completed-main .slider .slider-arrow-left {
+    position: absolute;
+    display: unset;
+    width: 36px;
+    height: 36px;
+    left: 5%;
+    top: 45%;
+    border-radius: 50%;
+    background-color: #E3B873;
+    box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+  }
+  section.completed-projects .completed-main .slider .slider-arrow-left img {
+    padding: 0 11px 9px 0;
+    transform: rotate(180deg);
+  }
+  section.completed-projects .completed-main .slider .slider-arrow-left:hover {
+    background-color: #b39058;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+    cursor: pointer;
+  }
+  section.completed-projects .completed-main .slider .slider-arrow-right {
+    width: 36px;
+    height: 36px;
+    left: 85%;
+    top: 45%;
+  }
+  section.completed-projects .completed-main .slider .slider-arrow-right img {
+    padding: 10px 0 0 13px;
+  }
+  section.completed-projects .online-control {
+    margin-top: 30px;
+    font-size: 22px;
+    line-height: 138.6%;
+  }
+
+  .repair-video {
+    margin-top: -1px;
+    display: block;
+    height: 207px;
+    width: 100%;
+    background-color: #131313;
+  }
+  .repair-video iframe {
+    margin: 0px 0 0 5%;
+    width: 90%;
+    height: 207px;
+  }
+
+  section.request-field {
+    width: 100%;
+    height: 450px;
+    margin-top: -1px;
+    background-color: #131313;
+  }
+  section.request-field p {
+    margin: 51px 0 0 18px;
+    width: 340px;
+    font-size: 14px;
+    line-height: 138.6%;
+    color: #ffffff;
+  }
+  section.request-field p::before {
+    left: 42%;
+  }
+  section.request-field form {
+    display: flex;
+    position: relative;
+    color: #ffffff;
+    margin: 31px 0 0 0;
+  }
+  section.request-field form .submit-line {
+    display: flex;
+    flex-direction: column;
+  }
+  section.request-field form .submit-line .phone {
+    margin-top: 30px;
+  }
+  section.request-field form .submit-line input {
+    width: 340px;
+    margin: 0;
+    background: transparent;
+    color: #ffffff;
+  }
+  section.request-field form .submit-line input::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+  section.request-field form .submit-line input::-moz-placeholder {
+    color: #ffffff;
+  }
+  section.request-field form .submit-line button.submit-your-info {
+    position: absolute;
+    top: 137%;
+    width: 340px;
+    height: 51px;
+  }
+  section.request-field form .checkbox-line {
+    margin-top: 22px;
+  }
+
+  section.types-of-repair {
+    width: 100%;
+    margin-top: 58px;
+  }
+  section.types-of-repair h2 {
+    font-size: 22px;
+    line-height: 138.6%;
+  }
+  section.types-of-repair .types-offers {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.types-of-repair .types-offers .first-offer {
+    margin: 0 0 177px 0;
+    width: 340px;
+    justify-content: left;
+  }
+  section.types-of-repair .types-offers .first-offer .first {
+    margin-top: 230px;
+    height: 241px;
+    width: 270px;
+  }
+  section.types-of-repair .types-offers .first-offer .first h4 {
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.types-of-repair .types-offers .first-offer .first ul {
+    font-size: 13px;
+    line-height: 169.8%;
+  }
+  section.types-of-repair .types-offers .first-offer .first .cost {
+    margin-top: 18px;
+    height: 40px;
+    width: 190px;
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.types-of-repair .types-offers .second-offer {
+    margin: 0 0 177px 0;
+    width: 340px;
+    justify-content: left;
+  }
+  section.types-of-repair .types-offers .second-offer .second {
+    margin-top: 230px;
+    height: 241px;
+    width: 270px;
+  }
+  section.types-of-repair .types-offers .second-offer .second h4 {
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.types-of-repair .types-offers .second-offer .second ul {
+    font-size: 13px;
+    line-height: 169.8%;
+  }
+  section.types-of-repair .types-offers .second-offer .second .cost {
+    margin-top: 18px;
+    height: 40px;
+    width: 190px;
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.types-of-repair .types-offers .third-offer {
+    margin: 0;
+    width: 340px;
+    justify-content: left;
+  }
+  section.types-of-repair .types-offers .third-offer .third {
+    margin-top: 230px;
+    height: 241px;
+    width: 270px;
+  }
+  section.types-of-repair .types-offers .third-offer .third h4 {
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.types-of-repair .types-offers .third-offer .third ul {
+    font-size: 13px;
+    line-height: 169.8%;
+  }
+  section.types-of-repair .types-offers .third-offer .third .cost {
+    margin-top: 18px;
+    height: 40px;
+    width: 190px;
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+
+  section.virtues-call {
+    display: none;
+  }
+
+  section.realize-fantasies {
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    margin-top: 105px;
+    background: transparent;
+  }
+  section.realize-fantasies .first-images, section.realize-fantasies .second-images {
+    display: none;
+  }
+  section.realize-fantasies .realize-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+  }
+  section.realize-fantasies .realize-list h2 {
+    width: 300px;
+    font-size: 22px;
+    line-height: 138.6%;
+    text-align: center;
+  }
+  section.realize-fantasies .realize-list ul {
+    display: none;
+  }
+  section.realize-fantasies .realize-list .slider {
+    display: unset;
+    position: absolute;
+    left: -7%;
+    top: 90px;
+    margin: 0;
+  }
+  section.realize-fantasies .realize-list .slider .slider-img-3 {
+    width: 340px;
+    height: 241px;
+  }
+  section.realize-fantasies .realize-list .slider img {
+    margin-right: 0;
+  }
+  section.realize-fantasies .realize-list .slider .slider-arrow-left {
+    position: absolute;
+    display: unset;
+    width: 36px;
+    height: 36px;
+    left: 5%;
+    top: 45%;
+    border-radius: 50%;
+    background-color: #E3B873;
+    box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+  }
+  section.realize-fantasies .realize-list .slider .slider-arrow-left img {
+    padding: 0 11px 9px 0;
+    transform: rotate(180deg);
+  }
+  section.realize-fantasies .realize-list .slider .slider-arrow-left:hover {
+    background-color: #b39058;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+    cursor: pointer;
+  }
+  section.realize-fantasies .realize-list .slider .slider-arrow-right {
+    position: absolute;
+    display: unset;
+    width: 36px;
+    height: 36px;
+    left: 85%;
+    top: 45%;
+    border-radius: 50%;
+    background-color: #E3B873;
+    box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+  }
+  section.realize-fantasies .realize-list .slider .slider-arrow-right img {
+    padding: 10px 0 0 13px;
+  }
+  section.realize-fantasies .realize-list .slider .slider-arrow-right:hover {
+    background-color: #b39058;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+    cursor: pointer;
+  }
+
+  section.design-project {
+    background-color: #131313;
+    width: 100%;
+    height: 2000px;
+    margin-top: 10px;
+  }
+  section.design-project h2 {
+    color: #ffffff;
+    margin-top: 170px;
+    font-size: 22px;
+    line-height: 138.6%;
+  }
+  section.design-project p {
+    color: #ffffff;
+    width: 340px;
+    font-size: 15px;
+    line-height: 135.84%;
+  }
+  section.design-project .project-offers {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.design-project .project-offers .mini {
+    margin: 0 0 114px 0;
+    width: 340px;
+    height: 365px;
+    justify-content: left;
+  }
+  section.design-project .project-offers .mini .mini-block {
+    margin-top: 223px;
+    height: 177px;
+    width: 270px;
+  }
+  section.design-project .project-offers .mini .mini-block h4 {
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.design-project .project-offers .mini .mini-block ul {
+    font-size: 13px;
+    line-height: 169.8%;
+  }
+  section.design-project .project-offers .mini .mini-block .cost {
+    margin-top: 18px;
+    height: 40px;
+    width: 190px;
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.design-project .project-offers .standart {
+    margin: 0 0 177px 0;
+    width: 340px;
+    height: 365px;
+    justify-content: left;
+  }
+  section.design-project .project-offers .standart .standart-block {
+    margin-top: 230px;
+    height: 241px;
+    width: 270px;
+  }
+  section.design-project .project-offers .standart .standart-block h4 {
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.design-project .project-offers .standart .standart-block ul {
+    font-size: 13px;
+    line-height: 169.8%;
+  }
+  section.design-project .project-offers .standart .standart-block .cost {
+    margin-top: 18px;
+    height: 40px;
+    width: 190px;
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.design-project .project-offers .full {
+    margin: 0;
+    width: 340px;
+    height: 365px;
+    justify-content: left;
+  }
+  section.design-project .project-offers .full .full-block {
+    margin-top: 230px;
+    height: 347px;
+    width: 270px;
+  }
+  section.design-project .project-offers .full .full-block h4 {
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.design-project .project-offers .full .full-block ul {
+    font-size: 13px;
+    line-height: 169.8%;
+  }
+  section.design-project .project-offers .full .full-block .cost {
+    margin-top: 18px;
+    height: 40px;
+    width: 190px;
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+
+  section.steps {
+    display: none;
+  }
+
+  section.our-team {
+    margin-top: -1px;
+    height: 1800px;
+  }
+  section.our-team h2 {
+    margin-top: 80px;
+    font-size: 22px;
+    line-height: 138.6%;
+  }
+  section.our-team p:first-of-type {
+    font-size: 15px;
+    line-height: 135.84%;
+  }
+  section.our-team .team {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.our-team .team .first, section.our-team .team .second {
+    height: 357px;
+    width: 272px;
+    margin: 0 0 150px 0;
+  }
+  section.our-team .team .third {
+    height: 357px;
+    width: 272px;
+    margin: 0 0 150px 0;
+  }
+
+  section.our-clients {
+    margin-top: -1px;
+    width: 100%;
+  }
+  section.our-clients .clients, section.our-clients .recommend, section.our-clients img, section.our-clients h2, section.our-clients h2::before, section.our-clients p:first-of-type, section.our-clients .line {
+    display: none;
+  }
+  section.our-clients .questions {
+    width: 100%;
+    height: 550px;
+    margin: 0;
+    background-color: #131313;
+  }
+  section.our-clients .questions form {
+    color: #ffffff;
+    margin: 31px 0 0 0;
+  }
+  section.our-clients .questions form .inline {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  section.our-clients .questions form .inline .block .phone {
+    margin-top: 30px;
+  }
+  section.our-clients .questions form .inline .block:first-of-type {
+    margin: 0;
+  }
+  section.our-clients .questions form .inline .block:last-of-type {
+    margin-top: 62px;
+  }
+  section.our-clients .questions form .inline .block input {
+    height: 30px;
+    padding: 0;
+    width: 340px;
+    margin: 0;
+    background: transparent;
+    color: #ffffff;
+  }
+  section.our-clients .questions form .inline .block input::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+  section.our-clients .questions form .inline .block input::-moz-placeholder {
+    color: #ffffff;
+  }
+  section.our-clients .questions form .question {
+    margin-top: 62px;
+    width: 340px;
+  }
+  section.our-clients .questions form button.question-btn {
+    width: 340px;
+    height: 51px;
+  }
+  section.our-clients .questions form input[type=checkbox] {
+    margin-right: 10px;
+  }
+
+  section.connect {
+    height: 510px;
+    position: relative;
+    margin-top: -2px;
+    background: #131313;
+  }
+  section.connect .map {
+    width: 340px;
+    height: 255px;
+    position: absolute;
+  }
+  section.connect p {
+    margin-top: 340px;
+    width: 340px;
+    font-size: 18px;
+    line-height: 138.6%;
+  }
+  section.connect .social-nets img {
+    width: 39px;
+    height: 39px;
+  }
+
+  footer {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  section.completed-projects .completed-main .slider {
+    left: 10%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
