@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #ffecfd;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 500px;
+    margin-top: 50px;
+}
+
+.profile__avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    box-shadow: 0 0 15px #a7a7a7;
+}
+
+.profile__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__name {
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+    
+.profile__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile__item_github, .profile__item_linkedin, .profile__item_telegram {
+    margin-left: 15px;
+    font-size: 24px;
+    color: #1e76b1;
+}
+
+.profile__icon {
+    width: 40px;
+}
+
+.education {
+    max-width: 100%;
+    margin-top: calc(5% - 0px);
+}
+
+.education__panel {
+    display: flex;
+    background: #fff;
+    font-size: 24px;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.education__content {
+    padding: 0px 24px 24px 24px;
+}
+
+.education__panel[open] .education__summary::after {
+    color:#9e9e9e;
+    content: "expand_less";
+    font-family: 'Material Icons';
+}
+
+.education__panel[open] {
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 2px;
+}
+
+.education__summary {
+    outline: none;
+    cursor: pointer;
+    padding: 16px 24px;
+    color: #212121;
+    position: relative;
+}
+
+.education__summary:hover {
+    background: #eeeeee;
+}
+
+.education__panel[open] .education__summary:hover {
+    background: none;
+}
+
+.education__summary::-webkit-details-marker {
+    display: none;
+}
+
+.education__summary::after {
+    content: "expand_more";
+    font-family: 'Material Icons';
+    color: #9e9e9e;
+    font-size: 42px;
+    padding: 0;
+    text-align: center;
+    margin-top: 0;
+    position: absolute;
+    top: calc(50% - 18px);
+    bottom: 0;
+    right: 0;
+    width: 6%;
+}
+
+.education__summary_header {
+    color: #686868;
+    font-size: 24px;
+}
+
+li.education__item_first {
+    margin-top: 20px;
+}
+
+.education__item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    border-left: 2px solid #686868;
+    padding-left: 20px;
+}
+
+.education__item_name {
+    font-weight: 800;
+}
+
+.education__item_period {
+    font-size: 20px;
+}
