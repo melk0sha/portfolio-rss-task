@@ -521,7 +521,7 @@ footer > .logo {
     .slider > .video-mobile {
         display: unset;
         margin: 0;
-        width: 640px;
+        width: 100%;
         z-index: 1;
     }
 
