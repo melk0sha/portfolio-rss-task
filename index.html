@@ -5,61 +5,125 @@
     <title>RSS Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/code-fx/Pure-CSS3-Animated-Border@V1.0/css/animated-border/animated-border.min.css" />
 </head>
 <body>
 <div class="container">
-    <div class="profile">
-        <img class="profile__avatar" src="assets/avatar.jpg" alt="Profile photo">
-        <div class="profile__info">
-            <h1 class="profile__name">Diana Ivanova</h1>
-            <ul class="profile__list">
-                <li class="profile__item"><img class="profile__icon" src="assets/github.svg" alt="GitHub"><a class="profile__item_github" href="https://github.com/melk0sha">GitHub</a></li>
-                <li class="profile__item"><img class="profile__icon" src="assets/linkedin.svg" alt="LinkedIn"><a class="profile__item_linkedin" href="https://www.linkedin.com/in/melk0sha">LinkedIn</a></li>
-                <li class="profile__item"><img class="profile__icon" src="assets/telegram.svg" alt="Telegram"><a class="profile__item_telegram" href="https://t.me/melk0sha">Telegram</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="education">
-        <details class="education__panel">
-            <summary class="education__summary">
-                <h3 class="education__summary_header">Education</h3>
-            </summary>
-            <div class="education__content">
-                <ul class="education__list">
-                    <li class="education__item education__item_first">
-                        <span class="education__item_name">School</span>
-                        <span class="education__item_period">2006 - 2017</span>
-                    </li>
-                    <li class="education__item">
-                        <span class="education__item_name">Belarusian State University of Informatics and Radioelectronics</span>
-                        <span class="education__item_period">2017 - 2022</span>
-                    </li>
-                    <li class="education__item">
-                        <span class="education__item_name">The Rolling Scopes School</span>
-                        <span class="education__item_period">2019 - 2020</span>
-                    </li>
+    <header>
+        <div class="profile">
+            <img class="profile__avatar" src="assets/avatar.jpg" alt="Profile photo">
+            <div class="profile__info">
+                <h1 class="profile__name">Diana Ivanova</h1>
+                <ul class="profile__list">
+                    <li class="profile__item"><img class="profile__icon" src="assets/github.svg" alt="GitHub"><a class="profile__item_github" href="https://github.com/melk0sha" target="_blank">GitHub</a></li>
+                    <li class="profile__item"><img class="profile__icon" src="assets/linkedin.svg" alt="LinkedIn"><a class="profile__item_linkedin" href="https://www.linkedin.com/in/melk0sha" target="_blank">LinkedIn</a></li>
+                    <li class="profile__item"><img class="profile__icon" src="assets/telegram.svg" alt="Telegram"><a class="profile__item_telegram" href="https://t.me/melk0sha" target="_blank">Telegram</a></li>
                 </ul>
             </div>
-        </details>
-    </div>
-    <!-- <div class="panel">
-            <h1>Material - Expansion panels</h1>
-            <details>
-                <summary>
-                   <ul>
-                       <li class="titleName">Trip name</li>
-                       <li class="titleValue"> Caribbean cruise</li>
-                       <li></li>
-                   </ul>
-                </summary>
-                <div class="content">
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                </div>
-            </details> -->
-    </div>
-    <div class="projects">
+        </div>
+    </header>
 
-    </div>
+    <main>
+        <div class="education">
+            <details class="education__panel">
+                <summary class="education__summary">
+                    <h3 class="education__summary_header">Education</h3>
+                </summary>
+                <div class="education__content">
+                    <ul class="education__list">
+                        <li class="education__item education__item_first">
+                            <span class="education__item_name">School</span>
+                            <span class="education__item_period">2006 - 2017</span>
+                        </li>
+                        <li class="education__item">
+                            <span class="education__item_name">Belarusian State University of Informatics and Radioelectronics</span>
+                            <span class="education__item_period">2017 - 2022</span>
+                        </li>
+                        <li class="education__item">
+                            <span class="education__item_name">The Rolling Scopes School</span>
+                            <span class="education__item_period">2019 - 2020</span>
+                        </li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+
+        <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-item__dark-block">
+                            <a class="carousel-item__link-theyalow" href="#">
+                                <img src="assets/theyalow.jpg" class="d-block w-100" alt="TheYalow" id="project1">>
+                            </a>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="carousel-caption__header">TheYalow</h5>
+                            <ul class="carousel-caption__description">
+                                <li class="carousel-caption__item">1. Pixel Perfect extension</li>
+                                <li class="carousel-caption__item">2. SVG icons</li>
+                                <li class="carousel-caption__item">3. Interactive elements</li>
+                                <li class="carousel-caption__item">4. Desktop and mobile resolutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item__dark-block">
+                            <a class="carousel-item__link-repair" href="#">
+                                <img src="assets/repair-design.jpg" class="d-block w-100" alt="Repair Design" id="project2">>
+                            </a>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="carousel-caption__header">Repair Design</h5>
+                            <ul class="carousel-caption__description">
+                                <li class="carousel-caption__item">1. Figma template</li>
+                                <li class="carousel-caption__item">2. SCSS</li>
+                                <li class="carousel-caption__item">3. Interactive elements</li>
+                                <li class="carousel-caption__item">4. Desktop and mobile resolutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </main>
 </div>
+
+<section class="section-iframe">
+    <div class="section-iframe__container-prj1 container-project1 container-hidden">
+        <iframe src="projects/theyalow/index.html" class="container-project1__iFrame" id="container-project1__iFrame"></iframe>
+        <button class="btn btn-outline-success" type="button" id="container-project1__button-size"></button>
+        <button class="btn btn-outline-success" type="button" id="container-project1__button-back">Back</button>
+    </div>
+    <div class="section-iframe__container-prj2 container-project2 container-hidden">
+        <iframe src="projects/repair-design-project/index.html" class="container-project2__iFrame" id="container-project2__iFrame"></iframe>
+        <button class="btn btn-outline-success" type="button" id="container-project2__button-size"></button>
+        <button class="btn btn-outline-success" type="button" id="container-project2__button-back">Back</button>
+    </div>
+</section>
+
+<footer>
+    <h3 class="footer-info">Minsk, 2019</h3>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Подключаем плагин Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<!-- Подключаем Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" ></script>
 </body>
 </html>
