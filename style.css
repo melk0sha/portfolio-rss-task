@@ -93,10 +93,16 @@ body {
 
 .education__content {
     padding: 0px 24px 24px 24px;
+    animation: spoiler 1s;
+}
+
+@keyframes spoiler {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .education__panel[open] .education__summary::after {
-    color:#9e9e9e;
+    color: #9e9e9e;
     content: "expand_less";
     font-family: 'Material Icons';
 }
@@ -167,7 +173,6 @@ li.education__item_first {
 .education__item_period {
     font-size: 20px;
 }
-
 .bd-example {
     width: 80%;
     height: 550px;
