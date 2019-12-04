@@ -295,6 +295,10 @@ footer .footer-info {
         flex-direction: column;
         align-items: center;
     }
+    
+    .profile__avatar {
+        margin-left: 0;
+    }
 
     .profile__name {
         margin-top: 50px;
@@ -303,6 +307,7 @@ footer .footer-info {
     .profile__info {
         margin-right: 0;
         align-items: center;
+        margin-left: 0;
     }
 
     .education__summary::after {
